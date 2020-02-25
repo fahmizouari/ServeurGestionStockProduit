@@ -12,12 +12,7 @@ public class Produit {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
 	private String ref;
 	private int quantite;
 	private float prixunitaire;
@@ -31,6 +26,14 @@ public class Produit {
 		this.quantite = quantite;
 		this.prixunitaire = prixunitaire;
 	}
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
 	public String getRef() {
 		return ref;
 	}
